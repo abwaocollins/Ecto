@@ -1,9 +1,11 @@
 defmodule Linky.Bookmark do
   use Ecto.Schema
 
+  alias Linky.{User, Link}
+
   schema "bookmarks" do
-    field :user_id, :id
-    field :link_id, :id
+    belongs_to :user, User
+    belongs_to :link, Link
     field :title, :string
 
     timestamps()

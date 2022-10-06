@@ -1,10 +1,12 @@
 defmodule Linky.LinkTag do
+  alias Linky.{User, Link, Tag}
   use Ecto.Schema
 
   schema "link_tags" do
-    field :user_id, :id
-    field :link_id, :id
-    field :tag_id, :id
+    belongs_to :user, User
+    belongs_to :link, Link
+    belongs_to :tag, Tag
+
 
     timestamps()
 
