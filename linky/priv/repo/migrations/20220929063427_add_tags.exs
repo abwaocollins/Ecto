@@ -1,4 +1,4 @@
-defmodule Linky.Repo.Migrations.AddTags do
+defmodule Linky.Repo.Migrations.CreateTags do
   use Ecto.Migration
 
   def change do

@@ -1,4 +1,4 @@
-defmodule Linky.Repo.Migrations.AddBookmarks do
+defmodule Linky.Repo.Migrations.CreateBookmarks do
   use Ecto.Migration
 
   def change do
